@@ -4,8 +4,7 @@
 
 **st.write = Streamlit 里最万能的“输出指令”，你丢什么它就显示什么。**
 
-> **st.write 是 Streamlit 的万能输出工具。你丢什么它就显示什么，而且会自动选择最合适的展示方式。它支持多参数、自动类型识别、markdown、图表、表格、异常等，是做 MVP 时最常用的函数。**
-> 
+**st.write 是 Streamlit 的万能输出工具。你丢什么它就显示什么，而且会自动选择最合适的展示方式。它支持多参数、自动类型识别、markdown、图表、表格、异常等，是做 MVP 时最常用的函数。**
 
 ---
 
@@ -95,12 +94,14 @@ st.write("Hello, *World!* :sunglasses:")
 
 ### 🔍 第一行：`import streamlit as st`
 
-| 字符 | 含义 |
-| --- | --- |
-| `import` | Python 关键字，意思是“导入一个库” |
-| `streamlit` | 库的名字，就是你安装的 Streamlit |
-| `as` | Python 关键字，意思是“给它起个别名” |
-| `st` | 别名，以后你写 `st.xxx` 就是在用 Streamlit |
+
+| 字符          | 含义                              |
+| ----------- | ------------------------------- |
+| `import`    | Python 关键字，意思是“导入一个库”           |
+| `streamlit` | 库的名字，就是你安装的 Streamlit           |
+| `as`        | Python 关键字，意思是“给它起个别名”          |
+| `st`        | 别名，以后你写 `st.xxx` 就是在用 Streamlit |
+
 
 **为什么要这么写？**
 
@@ -110,18 +111,20 @@ st.write("Hello, *World!* :sunglasses:")
 
 ### 🔍 第二行：`st.write("Hello, *World!* :sunglasses:")`
 
-| 字符 | 含义 |
-| --- | --- |
-| `st` | 刚才起的别名，代表 Streamlit |
-| `.` | 调用对象的方法 |
-| `write` | Streamlit 的万能输出函数 |
-| `(` | 开始传入参数 |
+
+| 字符                               | 含义                        |
+| -------------------------------- | ------------------------- |
+| `st`                             | 刚才起的别名，代表 Streamlit       |
+| `.`                              | 调用对象的方法                   |
+| `write`                          | Streamlit 的万能输出函数         |
+| `(`                              | 开始传入参数                    |
 | `"Hello, *World!* :sunglasses:"` | 字符串，里面包含 markdown 和 emoji |
-| `)` | 参数结束 |
+| `)`                              | 参数结束                      |
+
 
 **为什么要这么写？**
 
-因为 st.write 会自动把字符串当成 markdown 渲染，所以 `*World!*` 会变斜体，`:sunglasses:` 会变成 😎。
+因为 st.write 会自动把字符串当成 markdown 渲染，所以 `*World!`* 会变斜体，`:sunglasses:` 会变成 😎。
 
 ---
 
@@ -262,3 +265,4 @@ st.write(chart)
 ---
 
 ---
+
